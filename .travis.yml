@@ -20,7 +20,7 @@ script:
   - mv build/index.html build/404.html
 deploy:
   provider: pages
-  skip_cleanup: true
+  cleanup: true
   github_token: $github_token
   local_dir: build
   on:
